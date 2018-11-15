@@ -1,7 +1,7 @@
 # SimplexGraphs
 R code to draw simplex graphs
 <hr>
-<p>A few simple functions to draw simplex graphs and add data points.</p>
+<p>A few functions to draw simplex graphs and add data points.</p>
 
 <p>The main functions are:
 <ul>
@@ -9,8 +9,8 @@ R code to draw simplex graphs
     <p>arguments include:
       <ul>
         <li>plotData (default = 0): This should be a matrix or data.frame in which the first three columns represent the 
-                                    values for the upper vertex (12|34), the lower left vertex (13|24), and the
-          lower right vertex (14|23), respectively. </li>
+                                    values for the upper vertex, the lower left vertex, and the
+                                    lower right vertex, respectively. </li>
         <li>vertexlabels: a vector of three elements to label the three vertices (upper, lower left, lower right)</li>
         <li>drawLabels (default = FALSE): whether to draw the vertex labels or not</li>
         <li>cexLabels (default = .5): size to draw the vertex labels</li>
