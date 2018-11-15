@@ -19,9 +19,47 @@ R code to draw simplex graphs
         <li>col (default = black): The color to paint the points</li>
     </ul>
     <p>Example: 
-      </br>myData = matrix(c(0.9,0.1,0,.05,.9,.05), ncol=3, byrow=T)
-      </br>simplexPlot(myData, cexPoints = .5, col="red", vertexLabels = c("A","B","C"), drawLabels = TRUE)
+      <span style="font-family: courier">
+        </br>myData = matrix(c(0.9,0.1,0,.05,.9,.05), ncol=3, byrow=T)
+        </br>simplexPlot(myData, cexPoints = .5, col="red", vertexLabels = c("A","B","C"), drawLabels = TRUE)
+      </span>
     </p>
   </li>
+  <li><b>quartetPlot</b>
+  <p>An extension of simplexPlot designed to display concordance factors or posterior probabilities for the three
+    topologies in phylogenetic studies of quartets.  The display replaces the vertex labels with small tree diagrams.
+    Arguments include:
+    <ul>
+      <li>plotData: same as above, the column order of the data should be (12|34), (13|24), (14|23).</li>
+      <li>binLabels (default NULL): A vector with labels for the four taxa. 
+          If provided, a legend is drawn to the upper left of the simplex.</li>
+      <li>cexLabels (default = .7): the size of the legend text</li>
+      <li>cexPoints (default = .1): same as above</li>
+      <li>main (default = ""): same as above</li>
+      <li>col (default = black): same as above</li>
+  </ul>
+  <p>Example: 
+      <span style="font-family: courier">
+        </br>myData = matrix(c(0.9,0.1,0,.05,.9,.05), ncol=3, byrow=T)
+        </br>quartetPlot(myData, cexPoints = .5, col="red", binLabels = c("outgroup","gorillas","humans","chimps"))
+      </span>
+    </p>
+  </li>
+  <li><b>simplexPoints</b>
+  <p>This function adds points to an already drawn simplex plot. Arguments include:
+    <ul>
+      <li>plotData: same as above.</li>
+      <li>col: same as above.</li>
+      <li>cexPoints: same as above.</li>
+  </ul>
+  <p>Example: 
+      <span style="font-family: courier">
+        </br>myData = matrix(c(0.9,0.1,0,.05,.9,.05), ncol=3, byrow=T)
+        </br>quartetPlot(0, binLabels = c("outgroup","gorillas","humans","chimps"))
+        </br>simplexPoints(myData[1,,drop=F], col="red", cexPoints = 1)
+        </br>simplexPoints(myData[2,,drop=F], col="blue", cexPoints = 1)
+      </span>
+    </p>
+  </li>  
 </ul>
 </p>
