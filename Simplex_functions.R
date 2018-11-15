@@ -263,33 +263,3 @@ simplexPoints = function(plotPoints,
 }
 
 
-RUN_SAMPLE_CODE = FALSE
-if( RUN_SAMPLE_CODE ){
-  numPoints = 100
-  x = runif(numPoints)
-  y = (1-x) * runif(numPoints)
-  z = 1 - x - y
-  plotData = data.frame(x = x, y = y, z = z)
-  quartetPlot(plotData)
-  quartetPlot(plotData,
-              binLabels = c("outgroup", "cousins", "sister 1", "sister 2"))
-  quartetPlot(plotData,
-              binLabels = c("outgroup", "cousins", "sister 1", "sister 2"),
-              cexLabels = 1)
-  quartetPlot(plotData,
-              binLabels = c("outgroup", "cousins", "sister 1", "sister 2"),
-              cexLabels = 1,
-              cexPoints = .7)
-  quartetPlot(plotData,
-              binLabels = c("outgroup", "cousins", "sister 1", "sister 2"),
-              cexLabels = 1,
-              cexPoints = 1,
-              main="some points")
-  quartetPlot(plotData,
-              binLabels = c("outgroup", "cousins", "sister 1", "sister 2"),
-              cexLabels = 1,
-              cexPoints = 1,
-              main="some points",
-              col = "blue")
-  simplexPoints(plotData, col="red")
-}
