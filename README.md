@@ -19,10 +19,8 @@ R code to draw simplex graphs
         <li>col (default = black): The color to paint the points</li>
     </ul>
     <p>Example: 
-      <span style="font-family: courier">
-        </br>myData = matrix(c(0.9,0.1,0,.05,.9,.05), ncol=3, byrow=T)
+        </br>``myData = matrix(c(0.9,0.1,0,.05,.9,.05), ncol=3, byrow=T)``
         </br>simplexPlot(myData, cexPoints = .5, col="red", vertexLabels = c("A","B","C"), drawLabels = TRUE)
-      </span>
     </p>
   </li>
   <li><b>quartetPlot</b>
