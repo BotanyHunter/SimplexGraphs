@@ -53,8 +53,8 @@ R code to draw simplex graphs
   <p>Example: 
     </br>myData = matrix(c(0.9,0.1,0,.05,.9,.05), ncol=3, byrow=T)
     </br>quartetPlot(0, binLabels = c("outgroup","gorillas","humans","chimps"))
-    </br>simplexPoints(myData\[1,,drop=F\], col="red", cexPoints = 1)
-    </br>simplexPoints(myData\[2,,drop=F\], col="blue", cexPoints = 1)
+    </br>simplexPoints(myData[1,,drop=F], col="red", cexPoints = 1)
+    </br>simplexPoints(myData[2,,drop=F], col="blue", cexPoints = 1)
   </p>
   </li>  
 </ul>
