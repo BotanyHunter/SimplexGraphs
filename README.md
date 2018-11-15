@@ -19,7 +19,7 @@ R code to draw simplex graphs
         <li>col (default = black): The color to paint the points</li>
     </ul>
     <p>Example: 
-        </br>``myData = matrix(c(0.9,0.1,0,.05,.9,.05), ncol=3, byrow=T)``
+        </br>myData = matrix(c(0.9,0.1,0,.05,.9,.05), ncol=3, byrow=T)
         </br>simplexPlot(myData, cexPoints = .5, col="red", vertexLabels = c("A","B","C"), drawLabels = TRUE)
     </p>
   </li>
@@ -35,13 +35,12 @@ R code to draw simplex graphs
       <li>cexPoints (default = .1): same as above</li>
       <li>main (default = ""): same as above</li>
       <li>col (default = black): same as above</li>
-  </ul>
+    </ul>
+  </p>
   <p>Example: 
-      <span style="font-family: courier">
-        </br>myData = matrix(c(0.9,0.1,0,.05,.9,.05), ncol=3, byrow=T)
-        </br>quartetPlot(myData, cexPoints = .5, col="red", binLabels = c("outgroup","gorillas","humans","chimps"))
-      </span>
-    </p>
+    </br>myData = matrix(c(0.9,0.1,0,.05,.9,.05), ncol=3, byrow=T)
+    </br>quartetPlot(myData, cexPoints = .5, col="red", binLabels = c("outgroup","gorillas","humans","chimps"))
+  </p>
   </li>
   <li><b>simplexPoints</b>
   <p>This function adds points to an already drawn simplex plot. Arguments include:
@@ -49,15 +48,14 @@ R code to draw simplex graphs
       <li>plotData: same as above.</li>
       <li>col: same as above.</li>
       <li>cexPoints: same as above.</li>
-  </ul>
+    </ul>
+  </p>
   <p>Example: 
-      <span style="font-family: courier">
-        </br>myData = matrix(c(0.9,0.1,0,.05,.9,.05), ncol=3, byrow=T)
-        </br>quartetPlot(0, binLabels = c("outgroup","gorillas","humans","chimps"))
-        </br>simplexPoints(myData[1,,drop=F], col="red", cexPoints = 1)
-        </br>simplexPoints(myData[2,,drop=F], col="blue", cexPoints = 1)
-      </span>
-    </p>
+    </br>myData = matrix(c(0.9,0.1,0,.05,.9,.05), ncol=3, byrow=T)
+    </br>quartetPlot(0, binLabels = c("outgroup","gorillas","humans","chimps"))
+    </br>simplexPoints(myData\[1,,drop=F\], col="red", cexPoints = 1)
+    </br>simplexPoints(myData\[2,,drop=F\], col="blue", cexPoints = 1)
+  </p>
   </li>  
 </ul>
 </p>
